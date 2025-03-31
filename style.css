@@ -1,68 +1,191 @@
 /* Typing Speed Test Styles */
 
+/* Base styles and CSS variables */
+:root {
+    --primary-color: #3498db;
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+    --neutral-color: #666;
+    --bg-color: #f5f6fa;
+    --container-bg: white;
+    --shadow: 0 10px 30px rgba(0,0,0,0.1);
+    --border-radius: 12px;
+}
+
 /* Base styles for the entire page */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background: #f0f0f0;
+    background: var(--bg-color);
+    color: #2d3436;
+    line-height: 1.6;
 }
 
 /* Main container for the typing test */
 .container {
-    width: 600px;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 700px;
+    padding: 2rem;
+    background: var(--container-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+/* Title styling */
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2d3436;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 /* Text prompt display area */
 #prompt-text {
-    font-size: 1.2rem;
-    margin: 20px 0;
-    line-height: 1.5;
-    color: #666;
+    font-size: 1.25rem;
+    margin: 1.5rem 0;
+    line-height: 1.7;
+    color: var(--neutral-color);
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: var(--border-radius);
+    min-height: 80px;
 }
 
 /* Progress bar styles */
 .progress-container {
     width: 100%;
-    height: 4px;
+    height: 6px;
     background: #eee;
-    border-radius: 2px;
-    margin: 10px 0;
+    border-radius: 3px;
+    margin: 1rem 0;
     overflow: hidden;
 }
 
 #progress-bar {
     width: 0%;
     height: 100%;
-    background: #3498db;
+    background: var(--primary-color);
     transition: width 0.3s ease;
 }
 
 /* Input field for typing */
 #input-field {
     width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    margin: 10px 0;
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    border: 2px solid #e0e0e0;
+    border-radius: var(--border-radius);
+    resize: none;
+    transition: border-color 0.3s ease;
+    font-family: inherit;
+}
+
+#input-field:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+#input-field:disabled {
+    background: #f8f9fa;
+    cursor: not-allowed;
+}
+
+/* Start button styling */
+#start-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+#start-btn:hover {
+    background: #2980b9;
+    transform: translateY(-1px);
+}
+
+#start-btn:active {
+    transform: translateY(0);
+}
+
+#start-btn:disabled {
+    background: #bdc3c7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Results section styling */
+#results {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: var(--border-radius);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    text-align: center;
+}
+
+#results p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--neutral-color);
+}
+
+#results span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2d3436;
+    margin-top: 0.3rem;
 }
 
 /* Character state classes */
 .correct { 
-    color: #2ecc71;  /* Green for correct characters */
+    color: var(--success-color);
 }
 
 .incorrect { 
-    color: #e74c3c;  /* Red for incorrect characters */
+    color: var(--error-color);
     text-decoration: underline;
+    text-decoration-color: var(--error-color);
+    text-decoration-thickness: 2px;
 }
 
 .neutral { 
-    color: #666;  /* Gray for untyped characters */
+    color: var(--neutral-color);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #prompt-text {
+        font-size: 1.1rem;
+    }
+
+    #results {
+        grid-template-columns: 1fr;
+    }
 } 
