@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Typing Speed Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Speed Test</h1>
+        <div id="prompt-text"></div>
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+        <textarea id="input-field" rows="5" disabled aria-label="Typing input field" placeholder="Your text will appear here..."></textarea>
+        <button id="start-btn">Start Test</button>
+        <div id="results">
+            <p>Time: <span id="timer">0</span>s</p>
+            <p>Speed: <span id="wpm">0</span> WPM</p>
+            <p>Accuracy: <span id="accuracy">0</span>%</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

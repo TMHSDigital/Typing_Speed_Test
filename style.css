@@ -1,0 +1,68 @@
+/* Typing Speed Test Styles */
+
+/* Base styles for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #f0f0f0;
+}
+
+/* Main container for the typing test */
+.container {
+    width: 600px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Text prompt display area */
+#prompt-text {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Progress bar styles */
+.progress-container {
+    width: 100%;
+    height: 4px;
+    background: #eee;
+    border-radius: 2px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #3498db;
+    transition: width 0.3s ease;
+}
+
+/* Input field for typing */
+#input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/* Character state classes */
+.correct { 
+    color: #2ecc71;  /* Green for correct characters */
+}
+
+.incorrect { 
+    color: #e74c3c;  /* Red for incorrect characters */
+    text-decoration: underline;
+}
+
+.neutral { 
+    color: #666;  /* Gray for untyped characters */
+} 
