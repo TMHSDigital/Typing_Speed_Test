@@ -13,6 +13,9 @@
 [![Responsive](https://img.shields.io/badge/Responsive-Yes-brightgreen)](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
 [![Dependencies](https://img.shields.io/badge/Dependencies-None-brightgreen)](https://github.com/tmhsdigital/Typing_Speed_Test/blob/main/package.json)
 
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/tmhs.ig/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/tm-hospitality-strategies/)
+
 </div>
 
 ---
