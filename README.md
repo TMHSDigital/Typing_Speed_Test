@@ -1,6 +1,9 @@
 # Typing Speed Test
 
+<div align="center">
+
 [![Launch App](https://img.shields.io/badge/Launch%20App-Live%20Demo-blue?style=for-the-badge)](https://tmhsdigital.github.io/Typing_Speed_Test/)
+
 [![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/tmhsdigital/Typing_Speed_Test/releases)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -10,28 +13,32 @@
 [![Responsive](https://img.shields.io/badge/Responsive-Yes-brightgreen)](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
 [![Dependencies](https://img.shields.io/badge/Dependencies-None-brightgreen)](https://github.com/tmhsdigital/Typing_Speed_Test/blob/main/package.json)
 
+</div>
+
+---
+
 A simple web application to test your typing speed and accuracy built with vanilla HTML, CSS, and JavaScript.
 
-## Features
+## 🚀 Quick Start
 
-- Random text prompts for typing practice
-- Real-time feedback with character highlighting
-- WPM (Words Per Minute) calculation
-- Accuracy tracking
-- Timer system
-- Responsive design
-- Accessibility support
-
-## How to Use
-
-1. Open the `index.html` file in your browser or visit the deployed site
+1. Open the `index.html` file in your browser or visit the [live demo](https://tmhsdigital.github.io/Typing_Speed_Test/)
 2. Click the "Start Test" button
 3. Type the displayed text as accurately and quickly as possible
 4. View your results after completing the text
 
-## Technical Details
+## ✨ Features
 
-### Project Structure
+- 🎯 Random text prompts for typing practice
+- 🔄 Real-time feedback with character highlighting
+- ⚡ WPM (Words Per Minute) calculation
+- 📊 Accuracy tracking
+- ⏱️ Timer system
+- 📱 Responsive design
+- ♿ Accessibility support
+
+## 🛠️ Technical Details
+
+### 📁 Project Structure
 ```
 Typing_Speed_Test/
 ├── index.html      # Main HTML file
@@ -40,7 +47,7 @@ Typing_Speed_Test/
 └── README.md       # Documentation
 ```
 
-### Key Components
+### 🔧 Key Components
 
 #### HTML (`index.html`)
 - Responsive viewport meta tag
@@ -61,19 +68,19 @@ Typing_Speed_Test/
 - Accuracy calculation: `(correctChars / totalChars) * 100`
 - Timer implementation using `setInterval`
 
-### Performance Considerations
+### ⚡ Performance Considerations
 - Minimal DOM manipulation
 - Efficient string operations
 - No external dependencies
 - Lightweight implementation (< 100 lines of JS)
 
-## Browser Support
+## 🌐 Browser Support
 - Chrome (latest)
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
 
-## Development
+## 💻 Development
 
 ### Prerequisites
 - Modern web browser
@@ -91,7 +98,7 @@ Typing_Speed_Test/
 - Semantic HTML5
 - Accessibility-first approach
 
-## Future Enhancements
+## 🔮 Future Enhancements
 
 ### Planned Features
 - Add difficulty levels
@@ -109,12 +116,18 @@ Typing_Speed_Test/
 - Dark mode support
 - Mobile app version
 
-## Contributing
+## 🤝 Contributing
 1. Fork the repository
 2. Create your feature branch
 3. Commit your changes
 4. Push to the branch
 5. Create a Pull Request
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<div align="center">
+Made with ❤️ by TMHS Digital
+</div>
