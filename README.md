@@ -1,5 +1,7 @@
 # Typing Speed Test
 
+[![Launch App](https://img.shields.io/badge/Launch%20App-Live%20Demo-blue?style=for-the-badge)](https://tmhsdigital.github.io/Typing_Speed_Test/)
+
 A simple web application to test your typing speed and accuracy built with vanilla HTML, CSS, and JavaScript.
 
 ## Features
